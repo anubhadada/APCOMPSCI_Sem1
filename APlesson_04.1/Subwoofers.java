@@ -18,14 +18,12 @@ public class Subwoofers
 		
 		double volume = form.calcVol(height, length, width);
 		
-		double cubicVol = (height*length*width)/1728;
-		
-		System.out.println("Your volume is " + cubicVol);
+		System.out.println("Your volume is " + volume);
 	
 	}
 	
 	public double calcVol(double height, double length, double width)
 	{
-		return (height*length*width);
+		return ((height*length*width)/1728);
 	}
 }
