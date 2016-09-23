@@ -13,13 +13,13 @@ public class Lab_02
 		String city = "San Diego, CA";
 		String zip = "-92130";
 		
-		System.out.println(name + address + city + zip);
+		System.out.println("\n" + name + "\n" + address + "\n" + city + zip);
 		
 		int l = 5;
 		int w = 3;
 		int h = 6;
 		int surfaceArea = 2 * (w * l + h * l + h * w);
 		
-		System.out.println("The surface area of your rectangular prism is " + surfaceArea);
+		System.out.println("\nThe surface area of your rectangular prism is " + surfaceArea);
 	}
 }
