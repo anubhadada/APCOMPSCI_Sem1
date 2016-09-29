@@ -9,16 +9,17 @@ public class Cube
 		Scanner kb = new Scanner(System.in);
 		System.out.println("Please enter a side length:");
 		side = kb.nextDouble();
+		calcSurf();
 		print();
 	}
 	
-	public static double calcSurf()
+	public static void calcSurf()
 	{
-		return((side*side)*6);
+		sa = ((side*side)*6);
 	}
 	
 	public static void print()
 	{
-		System.out.println("The surface area of your cube is " + calcSurf());
+		System.out.printf("The surface area of your cube is: %10.5f", sa);
 	}
 }

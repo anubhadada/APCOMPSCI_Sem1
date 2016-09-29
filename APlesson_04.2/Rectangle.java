@@ -3,6 +3,7 @@ public class Rectangle
 {
 	static double length;
 	static double width;
+	static double perim;
 	
 	public static void main(String[]args)
 	{
@@ -11,17 +12,18 @@ public class Rectangle
 		length = kb.nextDouble();
 		System.out.println("Please enter a width:");
 		width = kb.nextDouble();
+		calcPerim();
 		print();
 	}
 	
-	public static double calcPerim()
+	public static void calcPerim()
 	{
-		return (2*length + 2*width);
+		perim = 2*length + 2*width;
 	}
 	
 	public static void print()
 	{
-		System.out.println("Your rectangle is " + calcPerim() + " ft around");
+		System.out.printf("Your rectangle is %10.5f", perim, " ft around");
 	}
 	 
 }

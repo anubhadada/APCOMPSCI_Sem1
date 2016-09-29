@@ -4,6 +4,7 @@ public class Average
 	static double num1;
 	static double num2;
 	static double num3;
+	static double avg;
 	
 	public static void main(String[]args)
 	{
@@ -14,16 +15,17 @@ public class Average
 		num2 = kb.nextDouble();
 		System.out.println("Please enter a third number:");
 		num3 = kb.nextDouble();
+		average();
 		print();
 	}
 	
-	public static double average()
+	public static void average()
 	{
-		return((num1 + num2 + num3)/3);
+		avg = (num1 + num2 + num3)/3;
 	}
 	
 	public static void print()
 	{
-		System.out.println("The average of " + num1 + ", " + num2 + ", and " + num3 + " is " + average());
+		System.out.printf("The average of " + num1 + ", " + num2 + ", and " + num3 + " is: %10.5f", avg);
 	}
 }
