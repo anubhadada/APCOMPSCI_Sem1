@@ -21,6 +21,6 @@ public class Circle
 	
 	public static void print()
 	{
-		System.out.printf("The area of your circle is: %10.5f", + area);
+		System.out.printf("The area of your circle with a radius of " + r + " is: %10.5f", + area);
 	}
 }

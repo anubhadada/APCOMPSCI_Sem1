@@ -20,6 +20,6 @@ public class Cube
 	
 	public static void print()
 	{
-		System.out.printf("The surface area of your cube is: %10.5f", sa);
+		System.out.printf("The surface area of your cube whose sides are " + side + " in length is: %10.5f", sa);
 	}
 }
