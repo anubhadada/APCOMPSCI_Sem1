@@ -50,7 +50,7 @@ public class NewReceipt
 		
 		form.format("Total:", disc);
 		
-		double tax = (0.08*disc);
+		double tax = (0.08 * disc);
 		form.format("Tax:", tax);
 		
 		double total = tax + disc;
@@ -64,7 +64,7 @@ public class NewReceipt
 	{
 		double price = 0;
 		if (subtotal >= 2000)
-			price = subtotal - (0.15*subtotal);
+			price = subtotal - (0.15 * subtotal);
 		
 		if (subtotal <= 2000)
 			price = subtotal;
