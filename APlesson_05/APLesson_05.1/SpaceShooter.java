@@ -16,5 +16,4 @@ public class SpaceShooter
 			System.out.println("Keep trying!");
 		
 	}	
-	
 }	
