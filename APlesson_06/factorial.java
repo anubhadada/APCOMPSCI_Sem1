@@ -8,7 +8,7 @@ public class factorial
 		int number = kb.nextInt();
 		int factorial = 1;
 		
-		for(int i = 1; i <= factorial; i++)
+		for(int i = 1; i <= number; i++)
 		{
 			factorial = factorial * i;
 		}
