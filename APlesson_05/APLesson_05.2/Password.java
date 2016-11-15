@@ -22,20 +22,23 @@ public class Password
 		{
 				System.out.println("You are granted access!");
 		}
-		else if(username.equals("ABhadada") && !(password.equals("12345")))
+		else 
 		{
-			System.out.println("Your password is incorrect!");
-			passCheck();
-		}
-		else if(!(username.equals("ABhadada")) && password.equals("12345"))
-		{
-			System.out.println("Your username is incorrect!");
-			passCheck();
-		}
-		else
-		{
-			System.out.println("Your username and password are incorrect!");
-			passCheck();
+			if(username.equals("ABhadada"))
+			{
+				System.out.println("Your password is incorrect!");
+				passCheck();
+			}
+			else if(password.equals("12345"))
+			{
+				System.out.println("Your username is incorrect!");
+				passCheck();
+			}
+			else
+			{
+				System.out.println("Your username and password are incorrect!");
+				passCheck();
+			}
 		}
 	}
 }	
