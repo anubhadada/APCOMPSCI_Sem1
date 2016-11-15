@@ -18,30 +18,24 @@ public class Password
 		System.out.println("Please enter your password: ");
 		String password = kb.nextLine();
 		
-		if(username.equals("ABhadada"))
+		if(username.equals("ABhadada") && password.equals("12345"))
 		{
-			if(password.equals("12345"))
-			{
 				System.out.println("You are granted access!");
-			}
-			else
-			{
-				System.out.println("Your password is incorrect!");
-				passCheck();
-			}
+		}
+		else if(username.equals("ABhadada") && !(password.equals("12345")))
+		{
+			System.out.println("Your password is incorrect!");
+			passCheck();
+		}
+		else if(!(username.equals("ABhadada")) && password.equals("12345"))
+		{
+			System.out.println("Your username is incorrect!");
+			passCheck();
 		}
 		else
 		{
-			if(password.equals("12345"))
-			{
-				System.out.println("Your username is incorrect!");
-				passCheck();
-			}
-			else
-			{
-				System.out.println("Your username and password are incorrect!");
-				passCheck();
-			}
+			System.out.println("Your username and password are incorrect!");
+			passCheck();
 		}
 	}
 }	
