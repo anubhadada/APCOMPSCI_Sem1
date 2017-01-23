@@ -1,8 +1,7 @@
 import java.util.Scanner;
 
-public class InventoryRunner
+public class InventoryDriver
 {
-
 	public static void main(String[]args)
 	{
 		Scanner kb = new Scanner(System.in);
