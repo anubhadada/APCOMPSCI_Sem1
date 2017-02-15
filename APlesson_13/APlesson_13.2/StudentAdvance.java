@@ -12,7 +12,7 @@ public class StudentAdvance extends Advance
 	
 	public String toString()
 	{
-		return "Serial #: " + getSerialNo() + "\nPrice: " + getPrice()
+		return "Serial #: " + getSerialNo() + "\nPrice: $" + getPrice()
 				+ "\n(STUDENT ID REQUIRED)";
 	}
 }
