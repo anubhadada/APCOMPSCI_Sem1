@@ -9,10 +9,10 @@ public class Car implements Location
 		ID = (int)(Math.random() * 1000000) + 1;
 	}
 	
-	public void move(double x, double y) 
+	public void move(double xCoord, double yCoord) 
 	{
-		location[0] += x;
-		location[1] += y;
+		location[0] += xCoord;
+		location[1] += yCoord;
 	}
 	
 	public int getID() 

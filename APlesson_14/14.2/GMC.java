@@ -1,8 +1,8 @@
 public class GMC extends Car 
 {
-    public GMC(double x, double y) 
+    public GMC(double xCoord, double yCoord) 
 	{
         super();
-        super.move(x, y);
+        super.move(xCoord, yCoord);
     }
 }
