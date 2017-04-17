@@ -1,4 +1,4 @@
-public class Magpie2
+public class Magpie1
 {
 	public String getGreeting()
 	{
