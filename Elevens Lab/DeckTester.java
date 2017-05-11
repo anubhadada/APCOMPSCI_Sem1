@@ -1,13 +1,5 @@
-/**
- * This is a class that tests the Deck class.
- */
 public class DeckTester 
 {
-
-	/**
-	 * The main method in this class checks the Deck operations for consistency.
-	 *	@param args is not used.
-	 */
 	public static void main(String[] args) 
 	{
 		// String[] rank1 = {"Jack", "Queen", "King"};
@@ -35,19 +27,19 @@ public class DeckTester
 		{
             String rank = "";
             String suit = "";
-            if ((i+1) % 13 == 11 ) 
+            if ((i+1) % 13 == 11) 
 			{
                 rank = "Jack";
             }
-            else if ( (i+1) % 13 == 12 ) 
+            else if ((i+1) % 13 == 12) 
 			{
                 rank = "Queen";
             }
-            else if ( (i+1) % 13 == 0 ) 
+            else if ((i+1) % 13 == 0) 
 			{
                 rank = "King";
             }
-            else if ( (i+1) % 13 == 1 ) 
+            else if ((i+1) % 13 == 1) 
 			{
                 rank = "Ace";
             }
